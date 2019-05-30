@@ -22,8 +22,6 @@
     <properties>
         <springorm-ver>5.1.6.RELEASE</springorm-ver>
         <spring-ver>2.1.3.RELEASE</spring-ver>
-        <hibernate-ver>5.4.2.Final</hibernate-ver>
-        <lombok-ver>1.18.6</lombok-ver>
         <dbUrl>jdbc:mysql://192.168.46.128:3306/angularspringdb</dbUrl>
         <dbUser>springangular</dbUser>
         <dbPassword>springangular</dbPassword>
@@ -51,7 +49,7 @@
             <artifactId>spring-boot-autoconfigure</artifactId>
             <version>${spring-ver}</version>
         </dependency>
-
+        <!--driver-->
         <dependency>
             <groupId>mysql</groupId>
             <artifactId>mysql-connector-java</artifactId>
@@ -61,7 +59,6 @@
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
-<!--            <version>${lombok-ver}</version>-->
             <scope>provided</scope>
         </dependency>
         <!-- DataSource (HikariCP) czyli polaczenie do bazy-->
@@ -76,8 +73,8 @@
         </dependency>
         <!-- Spring Data JPA -->
         <dependency>
-            <groupId>org.springframework.data</groupId>
-            <artifactId>spring-data-jpa</artifactId>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-data-jpa</artifactId>
         </dependency>
     </dependencies>
 
