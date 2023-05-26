@@ -21,7 +21,7 @@
     </build>
     <properties>
         <springorm-ver>5.1.6.RELEASE</springorm-ver>
-        <spring-ver>2.1.3.RELEASE</spring-ver>
+        <spring-ver>2.5.15</spring-ver>
         <dbUrl>jdbc:mysql://192.168.46.128:3306/angularspringdb</dbUrl>
         <dbUser>springangular</dbUser>
         <dbPassword>springangular</dbPassword>
